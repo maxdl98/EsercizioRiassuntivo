@@ -19,7 +19,8 @@
 # Se l'utente inserisce un numero negativo dispari, 
 # e aggiungerli a un set e stamparli.
 # Condizioni:
-# Se l'utente inserisce un numero pari, aggiungilo alla variabile somma e incrementa il contatore.
+# Se l'utente inserisce un numero pari, aggiungilo alla variabile somma e incrementa il contatore, aggiungerli anche a una lista, 
+# e fare un ciclo for per stampare i singoli numeri.
 # Se l'utente inserisce un numero dispari, 
 # non incrementare il contatore.
 
@@ -51,6 +52,8 @@ if user == user_data.get("username") and passwo == user_data.get("password") and
         if chiedo > 0 and chiedo % 2 == 0:  
             cont += 1
             num.append(chiedo)
+            for numero in num:
+                print("ecco il numero inserito nella lista", numero)
             somma += chiedo
         
         elif chiedo < 0 and chiedo % 2 != 0: 
@@ -58,4 +61,5 @@ if user == user_data.get("username") and passwo == user_data.get("password") and
             messaggio.add(chiedo)
             print(messaggio)
             break  
+
 
