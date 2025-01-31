@@ -21,17 +21,15 @@
 # Se l'utente inserisce un numero pari, aggiungilo alla variabile somma e incrementa il contatore.
 # Se l'utente inserisce un numero dispari, 
 # non incrementare il contatore.
-# Se l'utente inserisce qualcosa che non è un numero (ad esempio, una stringa),
-# mostra un messaggio di errore e chiedi di inserire un numero valido, senza interrompere il ciclo.
 
 somma = 0
 cont = 0
 
 while True:
-    try:
-        chiedo = int(input("Inserisci un numero"))
-    except Exception:
-        print("C'è un errore")
+    
+    chiedo = int(input("Inserisci un numero"))
+    
+    
         
     
     if chiedo > 0 and chiedo % 2 == 0:
@@ -42,3 +40,6 @@ while True:
         print("Hai inserito un numero non valido")
         print("Ecco la somma: ", somma, "Ecco quanti numeri hai inserito: ", cont)
         break
+
+
+
